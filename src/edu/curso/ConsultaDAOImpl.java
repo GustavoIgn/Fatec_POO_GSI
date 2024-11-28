@@ -11,7 +11,7 @@ import java.util.List;
 public class ConsultaDAOImpl implements ConsultaDAO {
 
 	private final static String DB_CLASS = "org.mariadb.jdbc.Driver";
-    private final static String DB_URL = "jdbc:mariadb://localhost:3306/agendadb?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true";
+    private final static String DB_URL = "jdbc:mariadb://localhost:3306/agendadb?useUnicode=true&characterEncoding=utf8mb4&allowPublicKeyRetrieval=true";
     private final static String DB_USER = "root";
     private final static String DB_PASS = "GStv62072";
 

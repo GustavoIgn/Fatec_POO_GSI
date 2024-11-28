@@ -17,7 +17,7 @@ CREATE TABLE animal (
 INSERT INTO animal (nome, especie, raca, idade, cpf_dono)
 VALUES 
 ('Rex', 'Cachorro', 'Labrador', 5, '12345678901'),
-('Mimi', 'Gato', 'Siamês', 3, '98765432100');
+('Mimi', 'Gato', 'Siames', 3, '98765432100');
 
 -- Criação da tabela Consulta
 CREATE TABLE consulta (
@@ -33,4 +33,4 @@ CREATE TABLE consulta (
 INSERT INTO consulta (animal_id, data, descricao)
 VALUES 
 (1, '2024-11-01', 'Consulta de rotina'),
-(2, '2024-11-15', 'Emergência: ferimento na pata');
+(2, '2024-11-15', 'Emergencia: ferimento na pata');

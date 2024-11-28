@@ -26,7 +26,6 @@ public class PrincipalBoundary extends Application {
         BorderPane panePrincipal = new BorderPane();
         MenuBar menuBar = new MenuBar();
         Menu mnuCadastro = new Menu("Cadastro");
-        Menu mnuAjuda = new Menu("Ajuda");
         
         MenuItem mnuItemConsulta = new MenuItem("Consulta");
         mnuItemConsulta.setOnAction(e -> 
@@ -38,11 +37,8 @@ public class PrincipalBoundary extends Application {
             panePrincipal.setCenter(telas.get("Animal").render())
         );
         
-        MenuItem mnuItemCreditos = new MenuItem("Créditos");
-        
         mnuCadastro.getItems().addAll(mnuItemAnimal, mnuItemConsulta);
-        mnuAjuda.getItems().add(mnuItemCreditos);
-        menuBar.getMenus().addAll(mnuCadastro, mnuAjuda);
+        menuBar.getMenus().addAll(mnuCadastro);
         
         panePrincipal.setTop(menuBar);
         Scene scn = new Scene(panePrincipal, 800, 600);
